@@ -5,15 +5,22 @@ public class Soru02_CiftTekToplam {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
+        System.out.print("N sayisini girin: ");
+        int n = scanner.nextInt();
 
-        // TODO: Girdileri alın
+        int ciftToplam = 0;
+        int tekToplam = 0;
 
-        // TODO: Girdileri kontrol edin (hatalı giriş / sınır durumları)
+        for (int i = 1; i <= n; i++) {
+            if (i % 2 == 0) {
+                ciftToplam += i;
+            } else {
+                tekToplam += i;
+            }
+        }
 
-        // TODO: Karar yapısını ve/veya döngüyü yazın
-
-        // TODO: Sonucu ekrana yazdırın
-
+        System.out.println("Çift sayilarin toplami: " + ciftToplam);
+        System.out.println("Tek sayilarin toplami: " + tekToplam);
         scanner.close();
     }
 }
