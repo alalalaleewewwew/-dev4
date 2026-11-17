@@ -6,14 +6,17 @@ public class Soru01_SayilariYazdir {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        // TODO: Girdileri alın
 
-        // TODO: Girdileri kontrol edin (hatalı giriş / sınır durumları)
+public class odev {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("N sayisini girin: ");
+        int n = scanner.nextInt();
 
-        // TODO: Karar yapısını ve/veya döngüyü yazın
-
-        // TODO: Sonucu ekrana yazdırın
-
+        for (int i = 1; i <= n; i++) {
+            System.out.print(i + " ");
+        }
+        
         scanner.close();
     }
 }
