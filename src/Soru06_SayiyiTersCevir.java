@@ -1,32 +1,21 @@
 import java.util.Scanner;
 
-/** Soru 6: Sayıyı Ters Çevirme */
-public class Soru06_SayiyiTersCevir {
-
+public class soru {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        System.out.print("Bir sayi girin: ");
+        System.out.print("Bir tam sayı girin: ");
         int sayi = scanner.nextInt();
 
-        boolean asalMi = true;
+        int tersSayi = 0;
+        int gecici = sayi;
 
-        if (sayi <= 1) {
-            asalMi = false;
-        } else {
-            for (int i = 2; i <= Math.sqrt(sayi); i++) {
-                if (sayi % i == 0) {
-                    asalMi = false;
-                    break;
-                }
-            }
+        while (gecici != 0) {
+            int basamak = gecici % 10;
+            tersSayi = tersSayi * 10 + basamak;
+            gecici /= 10;
         }
 
-        if (asalMi) {
-            System.out.println(sayi + " bir asal sayidir.");
-        } else {
-            System.out.println(sayi + " asal bir sayi değildir.");
-        }
+        System.out.println("Ters hali: " + tersSayi);
         scanner.close();
     }
 }
-     
