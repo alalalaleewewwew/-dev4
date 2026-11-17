@@ -5,7 +5,7 @@ public class Soru03_CarpimTablosu {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        System.out.print("Bir sayı girin: ");
+        System.out.print("Bir sayi girin: ");
         int sayi = scanner.nextInt();
 
         for (int i = 1; i <= 10; i++) {
