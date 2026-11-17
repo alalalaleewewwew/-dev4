@@ -5,14 +5,23 @@ public class Soru08_TahminOyunu {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
+        int gizliSayi = 42; 
+        int tahmin;
 
-        // TODO: Girdileri alın
+        System.out.println("1 ile 100 arasında bir sayı seçildi.");
 
-        // TODO: Girdileri kontrol edin (hatalı giriş / sınır durumları)
+        do {
+            System.out.print("Tahmininiz: ");
+            tahmin = scanner.nextInt();
 
-        // TODO: Karar yapısını ve/veya döngüyü yazın
-
-        // TODO: Sonucu ekrana yazdırın
+            if (tahmin > gizliSayi) {
+                System.out.println("Daha küçük bir sayı girin.");
+            } else if (tahmin < gizliSayi) {
+                System.out.println("Daha büyük bir sayı girin.");
+            } else {
+                System.out.println("Tebrikler, bildiniz!");
+            }
+        } while (tahmin != gizliSayi);
 
         scanner.close();
     }
