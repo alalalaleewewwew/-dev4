@@ -8,16 +8,16 @@ public class Soru08_TahminOyunu {
         int gizliSayi = 42; 
         int tahmin;
 
-        System.out.println("1 ile 100 arasında bir sayı seçildi.");
+        System.out.println("1 ile 100 arasında bir sayi seçildi.");
 
         do {
             System.out.print("Tahmininiz: ");
             tahmin = scanner.nextInt();
 
             if (tahmin > gizliSayi) {
-                System.out.println("Daha küçük bir sayı girin.");
+                System.out.println("Daha küçük bir sayi girin.");
             } else if (tahmin < gizliSayi) {
-                System.out.println("Daha büyük bir sayı girin.");
+                System.out.println("Daha büyük bir sayi girin.");
             } else {
                 System.out.println("Tebrikler, bildiniz!");
             }
