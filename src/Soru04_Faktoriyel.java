@@ -5,15 +5,18 @@ public class Soru04_Faktoriyel {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
+        System.out.print("Bir tam sayi girin: ");
+        int sayi = scanner.nextInt();
 
-        // TODO: Girdileri alın
-
-        // TODO: Girdileri kontrol edin (hatalı giriş / sınır durumları)
-
-        // TODO: Karar yapısını ve/veya döngüyü yazın
-
-        // TODO: Sonucu ekrana yazdırın
-
+        if (sayi < 0) {
+            System.out.println("Hata: Negatif sayilarin faktöriyelik hesabi yapılamaz.");
+        } else {
+            long faktoriyel = 1;
+            for (int i = 1; i <= sayi; i++) {
+                faktoriyel *= i;
+            }
+            System.out.println(sayi + "! = " + faktoriyel);
+        }
         scanner.close();
     }
 }
