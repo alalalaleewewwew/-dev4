@@ -3,7 +3,7 @@ import java.util.Scanner;
 public class soru {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        System.out.print("Bir tam sayı girin: ");
+        System.out.print("Bir tam sayi girin: ");
         int sayi = scanner.nextInt();
 
         int tersSayi = 0;
