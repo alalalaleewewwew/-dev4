@@ -5,15 +5,23 @@ public class Soru05_BasamakSayisi {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
+        System.out.print("Bir tam sayi girin");
+        int sayi = scanner.nextInt();
 
-        // TODO: Girdileri alın
+        int temp = Math.abs(sayi);
+        int basamakSayisi = 0;
 
-        // TODO: Girdileri kontrol edin (hatalı giriş / sınır durumları)
+        if (temp == 0) {
+            basamakSayisi = 1;
+        } else {
+            while (temp > 0) {
+                temp /= 10;
+                basamakSayisi++;
+            }
+        }
 
-        // TODO: Karar yapısını ve/veya döngüyü yazın
-
-        // TODO: Sonucu ekrana yazdırın
-
+        System.out.println("Basamak sayisi: " + basamakSayisi);
         scanner.close();
     }
 }
+      
