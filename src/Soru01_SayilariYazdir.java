@@ -5,11 +5,6 @@ public class Soru01_SayilariYazdir {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-
-
-public class odev {
-    public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
         System.out.print("N sayisini girin: ");
         int n = scanner.nextInt();
 
